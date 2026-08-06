@@ -8,11 +8,11 @@
 
 **Assistente de TI · DevOps & Automação · Desenvolvedor Full-Stack**
 
-📍 Canoas, RS — Brasil &nbsp;·&nbsp; 💼 ProShows &nbsp;·&nbsp; 🎓 Análise e Desenvolvimento de Sistemas — UNISINOS (4º semestre)
+Canoas, RS — Brasil &nbsp;·&nbsp; ProShows &nbsp;·&nbsp; Análise e Desenvolvimento de Sistemas — UNISINOS (4º semestre)
 
 ---
 
-### 🧭 Sobre mim
+### Sobre mim
 
 Atuo na **ProShows** com um perfil híbrido de **infraestrutura, automação e desenvolvimento**: administro servidores, sistemas de telefonia Avaya e racks, construo **automações de processo com N8N** (Outlook, Trello, Teams, SQL) e desenvolvo aplicações full-stack para necessidades internas da empresa.
 
@@ -22,7 +22,7 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 
 ---
 
-### 🛠️ Stack & Ferramentas
+### Stack & Ferramentas
 
 **Linguagens**
 
@@ -64,19 +64,19 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 
 ---
 
-### 🚀 Projetos em destaque
+### Projetos em destaque
 
 | Projeto | Descrição | Stack | Status |
 |---|---|---|---|
-| **[Cronicas-de-Aethelgard](https://github.com/BujesL/Cronicas-de-Aethelgard)** | TCG estilo Hearthstone: sistema de energia, deck-building, keywords (Battlecry, Deathrattle, Taunt) e 6 facções. | Flask · Python · TypeScript | ✅ público |
-| **[radarPOA](https://github.com/BujesL/radarPOA)** | Dashboard full-stack: pipeline Python/Polars filtrando dados de CNPJ da região metro de Porto Alegre + dashboard Next.js 15 com Recharts e TanStack Table. | Next.js 15 · Supabase · Vercel · Polars | ✅ público |
-| **[Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS)** | Automação de abertura de chamados: integra Outlook, Trello, Teams e SQL via N8N, com filtro de domínio corporativo. | N8N · TypeScript · SQL | ✅ público |
-| **[Sultec-Bombas](https://github.com/BujesL/Sultec-Bombas)** | Modernização de site institucional: layout responsivo, animações, lightbox e menu mobile. | HTML · CSS · JavaScript | ✅ público |
-| **[clone-yu-gi-oh](https://github.com/BujesL/clone-yu-gi-oh)** | Estudo de interface de jogo de cartas — o embrião que inspirou o Crônicas de Aethelgard. | HTML · JavaScript | ✅ público |
+| **[Cronicas-de-Aethelgard](https://github.com/BujesL/Cronicas-de-Aethelgard)** | TCG estilo Hearthstone: sistema de energia, deck-building, keywords (Battlecry, Deathrattle, Taunt) e 6 facções. | Flask · Python · TypeScript | público |
+| **[radarPOA](https://github.com/BujesL/radarPOA)** | Dashboard full-stack: pipeline Python/Polars filtrando dados de CNPJ da região metro de Porto Alegre + dashboard Next.js 15 com Recharts e TanStack Table. | Next.js 15 · Supabase · Vercel · Polars | público |
+| **[Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS)** | Automação de abertura de chamados: integra Outlook, Trello, Teams e SQL via N8N, com filtro de domínio corporativo. | N8N · TypeScript · SQL | público |
+| **[Sultec-Bombas](https://github.com/BujesL/Sultec-Bombas)** | Modernização de site institucional: layout responsivo, animações, lightbox e menu mobile. | HTML · CSS · JavaScript | público |
+| **[clone-yu-gi-oh](https://github.com/BujesL/clone-yu-gi-oh)** | Estudo de interface de jogo de cartas — o embrião que inspirou o Crônicas de Aethelgard. | HTML · JavaScript | público |
 
 ---
 
-### 📊 GitHub Stats
+### GitHub Stats
 
 <div align="center">
   <img height="165" src="https://github-readme-stats-xi-five-29.vercel.app/api?username=BujesL&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" /> 
@@ -85,8 +85,8 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 
 ---
 
-### 📫 Contato
+### Contato
 
-<!-- ⚠️ Substitua os links abaixo pelos seus reais antes de publicar -->
+<!-- Substitua os links abaixo pelos seus reais antes de publicar -->
 
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vinicius.bujes04@gmail.com)
