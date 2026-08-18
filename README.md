@@ -29,7 +29,7 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 ---
 
 
-<strong> Stack & Ferramentas</strong>
+<strong> Stack & Ferramentas</strong> 
 
 <br>
 
@@ -71,7 +71,7 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
 ![Protheus](https://img.shields.io/badge/Protheus-ERP-FF6600?style=for-the-badge)
 
-</details>
+
 
 ---
 
@@ -95,10 +95,9 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 </div>
 
 
-
 ---
 
 ### Contato
 
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vinicius.bujes04@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#) <!-- TODO: adicionar link do LinkedIn quando disponível -->
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vinicius-bujes-465969245/)
