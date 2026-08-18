@@ -16,39 +16,41 @@ Canoas, RS — Brasil &nbsp;·&nbsp; ProShows &nbsp;·&nbsp; Análise e Desenvol
 
 Não sou só "quem sabe Python" ou "quem sabe Next.js" — o que faço de fato é fechar o ciclo completo de um problema operacional real:
 
-```
-Infraestrutura → Automação → Desenvolvimento → Dados → IA
-```
+Infraestrutura
+      ↓
+  Automação
+      ↓
+  Software
+      ↓
+    Dados
+      ↓
+      IA
 
-Na prática: administro os servidores e a telefonia onde o problema mora, construo a automação que resolve a dor imediata, desenvolvo o sistema quando a automação não é suficiente, modelo os dados que sustentam esse sistema, e uso IA para extrair sinal desses dados — sem que a IA nunca vire a fonte da verdade (mais sobre isso nos destaques abaixo).
-
-É essa combinação — não uma linguagem isolada — que estrutura como eu resolvo problema.
+Meu foco é resolver problemas operacionais de ponta a ponta — da infraestrutura à aplicação, dos dados à inteligência.
 
 ### Sobre mim
 
-Atuo na **ProShows** com um perfil híbrido de **infraestrutura, automação e desenvolvimento**: administro servidores, sistemas de telefonia Avaya e racks, construo **automações de processo com N8N** (Outlook, Trello, Teams, SQL) e desenvolvo aplicações full-stack para necessidades internas da empresa.
+Construo automações com N8N para eliminar atrito operacional na ProShows e, quando a automação não basta, desenvolvo o sistema que falta — sustentado pela infraestrutura (servidores, telefonia Avaya, racks) que eu mesmo administro.
 
-Fora do trabalho, mantenho o **Crônicas de Aethelgard**, um TCG (jogo de cartas) inspirado em Hearthstone, com backend em Flask/Python e frontend em HTML/CSS/JS.
+Aplico a mesma lógica no Crônicas de Aethelgard, meu laboratório pessoal de arquitetura — onde, como no radarPOA, construo automações e aplicações que incorporam LLMs como componente do sistema, não como atalho para pular etapas de raciocínio.
 
-Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, tanto em automações corporativas quanto em projetos pessoais.
-
-### Foco atual
-
-- Modernizando o site institucional da Sultec Bombas com uma abordagem Spec-Driven Development
-- Evoluindo o sistema de cartas do Crônicas de Aethelgard (novo sistema de energia e keywords)
-- Aprofundando em arquitetura de automações N8N e integrações via API
+### Atualmente explorando
+- AI Engineering — agentes, tool calling, RAG e workflows determinísticos
+- Automation Engineering — N8N, APIs, eventos e integrações corporativas
+- Software Architecture — sistemas full-stack, contratos, testes e observabilidade
+- Data Engineering — pipelines, processamento distribuído e analytics
 
 ---
 
-### Destaques técnicos
+### Engenharia em prática
 
 Evidência concreta por trás dos projetos — o tipo de decisão que não aparece só lendo o nome da stack:
 
-- **Pipeline de dados em escala nacional, filtrado para uso regional** — no [Startup-Radar](https://github.com/BujesL/startup-radar-business-intelligence), processo o cadastro de CNPJ da Receita Federal (centenas de milhões de registros) com Polars em modo *lazy* (`scan_csv`), aplicando o filtro regional ainda no plano de execução — nunca materializando o dataset nacional inteiro em memória.
-- **IA sem alucinação por design** — no mesmo projeto, a Claude API nunca recebe uma pergunta livre sobre os dados: ela só recebe o JSON já agregado pelo Postgres e sua única tarefa é narrar esse JSON. O JSON usado fica salvo para auditoria — qualquer frase gerada pode ser checada contra o número exato que a originou.
-- **Sistema de service desk com Spec-Driven Development completo** — o [Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS) tem 4 features com especificação formal (`spec.md` → `plan.md` → `contracts/` → `tasks.md`) escritas **antes** do código, ingestão automática de e-mail via Microsoft Graph com numeração de chamado atômica (`nextval()` na mesma transação, sem race condition), e suíte de testes unitários + integração.
-- **Automação de produção com filtro anti-spam** — workflow N8N em produção na ProShows que integra Outlook, Trello, Teams e SQL, com filtro de domínio corporativo para impedir que e-mails externos gerem chamados falsos no sistema interno.
-- **Segurança desde o schema, não como retrofit** — Row Level Security habilitado desde a criação das tabelas (não adicionado depois), com escrita restrita a uma role que só o pipeline possui — o frontend nunca tem permissão de alterar dados.
+- Sistema de service desk com Spec-Driven Development completo — o Sistema-de-Chamados-PS tem 4 features com especificação formal (spec.md → plan.md → contracts/ → tasks.md) escritas antes do código, ingestão automática de e-mail via Microsoft Graph com numeração de chamado atômica (nextval() na mesma transação, sem race condition), e suíte de testes unitários + integração.
+- Pipeline de dados em escala nacional, filtrado para uso regional — no radarPOA, processo o cadastro de CNPJ da Receita Federal (centenas de milhões de registros) com Polars em modo lazy (scan_csv), aplicando o filtro regional ainda no plano de execução — nunca materializando o dataset nacional inteiro em memória.
+- Automação de produção com filtro anti-spam — workflow N8N em produção na ProShows que integra Outlook, Trello, Teams e SQL, com filtro de domínio corporativo para impedir que e-mails externos gerem chamados falsos no sistema interno.
+- Segurança desde o schema, não como retrofit — Row Level Security habilitado desde a criação das tabelas (não adicionado depois), com escrita restrita a uma role que só o pipeline possui — o frontend nunca tem permissão de alterar dados.
+- Arquitetura de IA para produção — não apenas uso de IA — no radarPOA, a Claude API nunca recebe uma pergunta livre sobre os dados: ela só recebe o JSON já agregado pelo Postgres, e sua única tarefa é narrar esse JSON em português natural. Esse JSON fica salvo (insights_ia.baseado_em) para auditoria — qualquer frase gerada é rastreável até o número exato que a originou. É esse tipo de decisão — desenhar onde a IA entra no fluxo e o que ela nunca pode decidir por conta própria — que separa um AI Automation Engineer de quem só chama uma API de IA.
 
 ---
 
