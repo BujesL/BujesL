@@ -6,7 +6,7 @@
 
 # Vinícius Bujes de Lima
 
-**DevOps & Automação · Desenvolvedor Full-Stack · Infraestrutura**
+**AI Automation Engineer · Full-Stack Developer · DevOps**
 
 Canoas, RS — Brasil &nbsp;·&nbsp; ProShows &nbsp;·&nbsp; Análise e Desenvolvimento de Sistemas — UNISINOS
 
