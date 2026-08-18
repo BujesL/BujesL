@@ -28,7 +28,7 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 
 ---
 
-<details>
+
 <strong> Stack & Ferramentas</strong>
 
 <br>
