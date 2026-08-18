@@ -20,7 +20,7 @@ Fora do trabalho, mantenho o **Crônicas de Aethelgard**, um TCG (jogo de cartas
 
 Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, tanto em automações corporativas quanto em projetos pessoais.
 
-### 🎯 Foco atual
+### Foco atual
 
 - Modernizando o site institucional da Sultec Bombas com uma abordagem Spec-Driven Development
 - Evoluindo o sistema de cartas do Crônicas de Aethelgard (novo sistema de energia e keywords)
@@ -29,7 +29,7 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 ---
 
 <details>
-<summary><strong>🛠️ Stack & Ferramentas</strong> (clique para expandir)</summary>
+<strong> Stack & Ferramentas</strong>
 
 <br>
 
@@ -75,7 +75,7 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 
 ---
 
-### 📌 Projetos em destaque
+### Projetos em destaque
 
 | Projeto | Descrição | Stack |
 |---|---|---|
@@ -87,7 +87,7 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 
 ---
 
-### 📊 GitHub Stats
+### GitHub Stats
 
 <div align="center">
   <img height="165" src="https://github-readme-stats-xi-five-29.vercel.app/api?username=BujesL&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
@@ -98,7 +98,7 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 
 ---
 
-### 📫 Contato
+### Contato
 
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vinicius.bujes04@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#) <!-- TODO: adicionar link do LinkedIn quando disponível -->
