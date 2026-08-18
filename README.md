@@ -94,9 +94,7 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
   <img height="165" src="https://github-readme-stats-xi-five-29.vercel.app/api/top-langs/?username=BujesL&layout=compact&theme=tokyonight&hide_border=true" />
 </div>
 
-<div align="center">
-  <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=BujesL&theme=tokyonight&hide_border=true" />
-</div>
+
 
 ---
 
