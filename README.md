@@ -40,11 +40,11 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 
 ---
 
-### 📈 Destaques técnicos
+### Destaques técnicos
 
 Evidência concreta por trás dos projetos — o tipo de decisão que não aparece só lendo o nome da stack:
 
-- **Pipeline de dados em escala nacional, filtrado para uso regional** — no [radarPOA](https://github.com/BujesL/radarPOA), processo o cadastro de CNPJ da Receita Federal (centenas de milhões de registros) com Polars em modo *lazy* (`scan_csv`), aplicando o filtro regional ainda no plano de execução — nunca materializando o dataset nacional inteiro em memória.
+- **Pipeline de dados em escala nacional, filtrado para uso regional** — no [Startup-Radar](https://github.com/BujesL/startup-radar-business-intelligence), processo o cadastro de CNPJ da Receita Federal (centenas de milhões de registros) com Polars em modo *lazy* (`scan_csv`), aplicando o filtro regional ainda no plano de execução — nunca materializando o dataset nacional inteiro em memória.
 - **IA sem alucinação por design** — no mesmo projeto, a Claude API nunca recebe uma pergunta livre sobre os dados: ela só recebe o JSON já agregado pelo Postgres e sua única tarefa é narrar esse JSON. O JSON usado fica salvo para auditoria — qualquer frase gerada pode ser checada contra o número exato que a originou.
 - **Sistema de service desk com Spec-Driven Development completo** — o [Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS) tem 4 features com especificação formal (`spec.md` → `plan.md` → `contracts/` → `tasks.md`) escritas **antes** do código, ingestão automática de e-mail via Microsoft Graph com numeração de chamado atômica (`nextval()` na mesma transação, sem race condition), e suíte de testes unitários + integração.
 - **Automação de produção com filtro anti-spam** — workflow N8N em produção na ProShows que integra Outlook, Trello, Teams e SQL, com filtro de domínio corporativo para impedir que e-mails externos gerem chamados falsos no sistema interno.
@@ -52,7 +52,7 @@ Evidência concreta por trás dos projetos — o tipo de decisão que não apare
 
 ---
 
-### 🛠️ Stack & Ferramentas
+### Stack & Ferramentas
 
 **Linguagens**
 
@@ -101,7 +101,7 @@ Evidência concreta por trás dos projetos — o tipo de decisão que não apare
 | Projeto | O que resolve | Complexidade real | Stack |
 |---|---|---|---|
 | **[Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS)** | Service desk interno: e-mail vira chamado rastreável automaticamente | Monorepo com Spec-Driven Development, ingestão via Microsoft Graph, numeração atômica, testes unit+integração | Fastify · PostgreSQL · React · N8N |
-| **[radarPOA](https://github.com/BujesL/radarPOA)** | Identifica setores em crescimento na Grande Porto Alegre a partir do cadastro nacional de CNPJ | Pipeline que filtra centenas de milhões de registros sem carregar tudo em memória; insight de IA auditável | Next.js 15 · Supabase · Polars |
+| **[Startup-Radar]((https://github.com/BujesL/startup-radar-business-intelligence))** | Identifica setores em crescimento na Grande Porto Alegre a partir do cadastro nacional de CNPJ | Pipeline que filtra centenas de milhões de registros sem carregar tudo em memória; insight de IA auditável | Next.js 15 · Supabase · Polars |
 | **[Cronicas-de-Aethelgard](https://github.com/BujesL/Cronicas-de-Aethelgard)** | TCG estilo Hearthstone (projeto pessoal) | Sistema de energia, deck-building, keywords via event hooks (Battlecry, Deathrattle, Taunt), 6 facções | Flask · Python · JavaScript |
 | **[Sultec-Bombas](https://github.com/BujesL/Sultec-Bombas)** | Modernização de site institucional | Layout responsivo, animações, lightbox, menu mobile | HTML · CSS · JavaScript |
 | **[clone-yu-gi-oh](https://github.com/BujesL/clone-yu-gi-oh)** | Estudo de interface de jogo de cartas | Embrião que originou o Crônicas de Aethelgard | HTML · JavaScript |
