@@ -28,10 +28,7 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 
 ---
 
-
-<strong> Stack & Ferramentas</strong> 
-
-<br>
+### Stack & Ferramentas
 
 **Linguagens**
 
@@ -70,8 +67,6 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
 ![Protheus](https://img.shields.io/badge/Protheus-ERP-FF6600?style=for-the-badge)
-
-
 
 ---
 
