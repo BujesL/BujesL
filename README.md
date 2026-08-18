@@ -101,7 +101,7 @@ Evidência concreta por trás dos projetos — o tipo de decisão que não apare
 | Projeto | O que resolve | Complexidade real | Stack |
 |---|---|---|---|
 | **[Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS)** | Service desk interno: e-mail vira chamado rastreável automaticamente | Monorepo com Spec-Driven Development, ingestão via Microsoft Graph, numeração atômica, testes unit+integração | Fastify · PostgreSQL · React · N8N |
-| **[Startup-Radar]((https://github.com/BujesL/startup-radar-business-intelligence))** | Identifica setores em crescimento na Grande Porto Alegre a partir do cadastro nacional de CNPJ | Pipeline que filtra centenas de milhões de registros sem carregar tudo em memória; insight de IA auditável | Next.js 15 · Supabase · Polars |
+| **[Startup-Radar](https://github.com/BujesL/startup-radar-business-intelligence)** | Identifica setores em crescimento na Grande Porto Alegre a partir do cadastro nacional de CNPJ | Pipeline que filtra centenas de milhões de registros sem carregar tudo em memória; insight de IA auditável | Next.js 15 · Supabase · Polars |
 | **[Cronicas-de-Aethelgard](https://github.com/BujesL/Cronicas-de-Aethelgard)** | TCG estilo Hearthstone (projeto pessoal) | Sistema de energia, deck-building, keywords via event hooks (Battlecry, Deathrattle, Taunt), 6 facções | Flask · Python · JavaScript |
 | **[Sultec-Bombas](https://github.com/BujesL/Sultec-Bombas)** | Modernização de site institucional | Layout responsivo, animações, lightbox, menu mobile | HTML · CSS · JavaScript |
 | **[clone-yu-gi-oh](https://github.com/BujesL/clone-yu-gi-oh)** | Estudo de interface de jogo de cartas | Embrião que originou o Crônicas de Aethelgard | HTML · JavaScript |
