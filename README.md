@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Ol%C3%A1%2C+eu+sou+o+Vin%C3%ADcius;DevOps+%26+Automa%C3%A7%C3%A3o;Developer+Full-Stack;AI-Assisted+Engineering" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Ol%C3%A1%2C+eu+sou+o+Vin%C3%ADcius;DevOps+%26+Automa%C3%A7%C3%A3o;Desenvolvedor+Full-Stack;Infraestrutura+%26+Sistemas" alt="Typing SVG" />
 
 </div>
 
@@ -8,7 +8,7 @@
 
 **DevOps & Automação · Desenvolvedor Full-Stack · Infraestrutura**
 
-Canoas, RS — Brasil &nbsp;·&nbsp; ProShows &nbsp;·&nbsp; Análise e Desenvolvimento de Sistemas — UNISINOS (4º semestre)
+Canoas, RS — Brasil &nbsp;·&nbsp; ProShows &nbsp;·&nbsp; Análise e Desenvolvimento de Sistemas — UNISINOS
 
 ---
 
@@ -20,14 +20,24 @@ Fora do trabalho, mantenho o **Crônicas de Aethelgard**, um TCG (jogo de cartas
 
 Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, tanto em automações corporativas quanto em projetos pessoais.
 
+### 🎯 Foco atual
+
+- Modernizando o site institucional da Sultec Bombas com uma abordagem Spec-Driven Development
+- Evoluindo o sistema de cartas do Crônicas de Aethelgard (novo sistema de energia e keywords)
+- Aprofundando em arquitetura de automações N8N e integrações via API
+
 ---
 
-### Stack & Ferramentas
+<details>
+<summary><strong>🛠️ Stack & Ferramentas</strong> (clique para expandir)</summary>
+
+<br>
 
 **Linguagens**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
@@ -35,7 +45,6 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
 **Frontend**
 
@@ -62,31 +71,36 @@ Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, t
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
 ![Protheus](https://img.shields.io/badge/Protheus-ERP-FF6600?style=for-the-badge)
 
----
-
-### Projetos em destaque
-
-| Projeto | Descrição | Stack | Status |
-|---|---|---|---|
-| **[Cronicas-de-Aethelgard](https://github.com/BujesL/Cronicas-de-Aethelgard)** | TCG estilo Hearthstone: sistema de energia, deck-building, keywords (Battlecry, Deathrattle, Taunt) e 6 facções. | Flask · Python · TypeScript | público |
-| **[radarPOA](https://github.com/BujesL/radarPOA)** | Dashboard full-stack: pipeline Python/Polars filtrando dados de CNPJ da região metro de Porto Alegre + dashboard Next.js 15 com Recharts e TanStack Table. | Next.js 15 · Supabase · Vercel · Polars | público |
-| **[Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS)** | Automação de abertura de chamados: integra Outlook, Trello, Teams e SQL via N8N, com filtro de domínio corporativo. | N8N · TypeScript · SQL | público |
-| **[Sultec-Bombas](https://github.com/BujesL/Sultec-Bombas)** | Modernização de site institucional: layout responsivo, animações, lightbox e menu mobile. | HTML · CSS · JavaScript | público |
-| **[clone-yu-gi-oh](https://github.com/BujesL/clone-yu-gi-oh)** | Estudo de interface de jogo de cartas — o embrião que inspirou o Crônicas de Aethelgard. | HTML · JavaScript | público |
+</details>
 
 ---
 
-### GitHub Stats
+### 📌 Projetos em destaque
+
+| Projeto | Descrição | Stack |
+|---|---|---|
+| **[radarPOA](https://github.com/BujesL/radarPOA)** | Dashboard full-stack: pipeline Python/Polars filtrando dados de CNPJ da região metro de Porto Alegre + dashboard Next.js 15. | Next.js 15 · Supabase · Vercel · Polars |
+| **[Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS)** | Automação de abertura de chamados: integra Outlook, Trello, Teams e SQL via N8N, com filtro de domínio corporativo. | N8N · TypeScript · SQL |
+| **[Cronicas-de-Aethelgard](https://github.com/BujesL/Cronicas-de-Aethelgard)** | TCG estilo Hearthstone: sistema de energia, deck-building, keywords (Battlecry, Deathrattle, Taunt) e 6 facções. | Flask · Python · JavaScript |
+| **[Sultec-Bombas](https://github.com/BujesL/Sultec-Bombas)** | Modernização de site institucional: layout responsivo, animações, lightbox e menu mobile. | HTML · CSS · JavaScript |
+| **[clone-yu-gi-oh](https://github.com/BujesL/clone-yu-gi-oh)** | Estudo de interface de jogo de cartas — o embrião que inspirou o Crônicas de Aethelgard. | HTML · JavaScript |
+
+---
+
+### 📊 GitHub Stats
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats-xi-five-29.vercel.app/api?username=BujesL&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" /> 
-  <img height="165" src="https://github-readme-stats-xi-five-29.vercel.app/api/top-langs/?username=BujesL&layout=compact&theme=tokyonight&hide_border=true" /> 
+  <img height="165" src="https://github-readme-stats-xi-five-29.vercel.app/api?username=BujesL&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+  <img height="165" src="https://github-readme-stats-xi-five-29.vercel.app/api/top-langs/?username=BujesL&layout=compact&theme=tokyonight&hide_border=true" />
+</div>
+
+<div align="center">
+  <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=BujesL&theme=tokyonight&hide_border=true" />
 </div>
 
 ---
 
-### Contato
-
-<!-- Substitua os links abaixo pelos seus reais antes de publicar -->
+### 📫 Contato
 
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vinicius.bujes04@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#) <!-- TODO: adicionar link do LinkedIn quando disponível -->
