@@ -12,7 +12,7 @@ Canoas, RS — Brasil &nbsp;·&nbsp; ProShows &nbsp;·&nbsp; Análise e Desenvol
 
 ---
 
-### 🧩 Meu diferencial
+### Meu diferencial
 
 Não sou só "quem sabe Python" ou "quem sabe Next.js" — o que faço de fato é fechar o ciclo completo de um problema operacional real:
 
@@ -32,7 +32,7 @@ Fora do trabalho, mantenho o **Crônicas de Aethelgard**, um TCG (jogo de cartas
 
 Uso IA (Claude, GitHub Copilot) como copiloto de desenvolvimento no dia a dia, tanto em automações corporativas quanto em projetos pessoais.
 
-### 🎯 Foco atual
+### Foco atual
 
 - Modernizando o site institucional da Sultec Bombas com uma abordagem Spec-Driven Development
 - Evoluindo o sistema de cartas do Crônicas de Aethelgard (novo sistema de energia e keywords)
