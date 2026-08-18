@@ -6,7 +6,7 @@
 
 # Vinícius Bujes de Lima
 
-**Assistente de TI · DevOps & Automação · Desenvolvedor Full-Stack**
+**DevOps & Automação · Desenvolvedor Full-Stack · Infraestrutura**
 
 Canoas, RS — Brasil &nbsp;·&nbsp; ProShows &nbsp;·&nbsp; Análise e Desenvolvimento de Sistemas — UNISINOS (4º semestre)
 
