@@ -14,7 +14,7 @@ Canoas, RS — Brasil &nbsp;·&nbsp; ProShows &nbsp;·&nbsp; Análise e Desenvol
 
 ### Meu diferencial
 
-Resolvo problemas operacionais de ponta a ponta. Parto da infraestrutura, automatizo o processo, desenvolvo o software quando necessário, estruturo os dados e aplico IA onde ela realmente agrega valor.
+Transformo processos operacionais em sistemas confiáveis — conectando infraestrutura, automação, software, dados e IA. Parto da infraestrutura, automatizo o processo, desenvolvo o software quando necessário, estruturo os dados e aplico IA onde ela realmente agrega valor.
 
 ```
 Infraestrutura
