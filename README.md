@@ -12,27 +12,15 @@ Canoas, RS — Brasil &nbsp;·&nbsp; ProShows &nbsp;·&nbsp; Análise e Desenvol
 
 ---
 
-### Meu diferencial
-
-Conecto infraestrutura, automação, software, dados e IA para transformar processos operacionais manuais em sistemas confiáveis — cada camada sustentando a próxima.
-
-```
-Infraestrutura
-      ↓
-  Automação
-      ↓
-  Software
-      ↓
-    Dados
-      ↓
-      IA
-```
-
 ### Sobre mim
 
-Construo automações com **n8n** para eliminar atrito operacional na ProShows e, quando a automação não basta, desenvolvo o sistema que falta — sustentado pela infraestrutura que também administro.
+Conecto infraestrutura, automação, software, dados e IA para transformar processos operacionais manuais em sistemas confiáveis. Construo automações com **n8n** para eliminar atrito operacional na ProShows e, quando a automação não basta, desenvolvo o sistema que falta — sustentado pela infraestrutura que também administro.
 
-No **AgentLab** — meu projeto principal no momento — levo essa disciplina para dentro da própria IA: construo a infraestrutura de engenharia para *avaliar* agentes antes que eles cheguem à produção. No **Crônicas de Aethelgard**, meu laboratório pessoal, aplico a mesma lógica em arquitetura de software, usando LLMs como componentes controlados do sistema — não como substitutos da lógica de negócio.
+```
+Infraestrutura → Automação → Software → Dados → IA
+```
+
+No **AgentLab** — meu projeto principal no momento — levo essa disciplina para dentro da própria IA: construo a infraestrutura de engenharia para *avaliar* agentes antes que eles cheguem à produção. No **Crônicas de Aethelgard**, meu laboratório pessoal, aplico a mesma disciplina de engenharia migrando um protótipo Flask/Python para uma stack moderna (Next.js + TypeScript + Supabase), hoje em produção.
 
 ### Atualmente explorando
 
@@ -46,9 +34,10 @@ No **AgentLab** — meu projeto principal no momento — levo essa disciplina pa
 
 ### Engenharia em prática
 
-- **Service Desk com Spec-Driven Development** — [Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS): 4 features especificadas (`spec.md` → `plan.md` → `contracts/` → `tasks.md`) antes do código, ingestão de e-mail via Microsoft Graph, numeração de ticket atômica (`nextval()` na mesma transação, sem race condition), testes unit + integração.
-- **Data pipeline em escala nacional** — [Startup Radar POA](https://github.com/BujesL/startup-radar-business-intelligence): filtra o dataset nacional de CNPJ com Polars em modo *lazy*, aplicando o recorte regional ainda no plano de execução, sem materializar a base inteira em memória.
-- **Arquitetura de IA para produção** — no mesmo projeto, a Claude API só recebe dados já agregados pelo Postgres; nunca uma pergunta livre. O JSON usado fica salvo para auditoria. A decisão arquitetural é deliberada: a IA interpreta dados já validados; não define a verdade do sistema.
+- **Service Desk com Spec-Driven Development** — [Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS): e-mail vira chamado rastreável via Microsoft Graph, numeração sequencial via `nextval()` na mesma query de INSERT (elimina a race condition clássica de ler-e-incrementar em duas etapas), deduplicação por `source_message_id`, 4 features especificadas com Spec-Driven Development antes do código.
+- **Data pipeline em escala nacional** — [Startup Radar POA](https://github.com/BujesL/startup-radar-business-intelligence): filtra o cadastro nacional de CNPJ da Receita Federal (centenas de milhões de registros) com Polars em modo *lazy* — predicate pushdown aplica o recorte regional ainda no plano de execução, sem materializar a base inteira em memória. Carga em Postgres via `COPY`, não `INSERT` linha a linha.
+- **IA como componente auditável, não fonte de verdade** — no mesmo projeto, a Claude API só recebe o JSON já agregado pelo Postgres; nunca uma pergunta livre sobre o dataset bruto. O JSON usado fica salvo junto ao insight gerado, então qualquer frase da IA é rastreável até o número exato que a originou.
+- **Migração de protótipo para produção** — [Crônicas de Aethelgard](https://github.com/BujesL/Cronicas-de-Aethelgard): jogo de cartas 1v1 contra IA, migrado de um protótipo Flask/JavaScript puro para Next.js 16 + TypeScript + Supabase (Auth, Postgres, RLS), em produção na Vercel.
 - **Automação em produção** — workflow n8n que processa chamados recebidos por e-mail, classifica solicitações e integra Outlook, Teams, Trello e SQL, reduzindo etapas manuais do atendimento.
 - **Segurança desde o schema** — Row Level Security habilitado desde a criação das tabelas, escrita restrita a uma role que só o pipeline possui.
 
@@ -69,7 +58,6 @@ No **AgentLab** — meu projeto principal no momento — levo essa disciplina pa
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 **Backend & Dados**
 
@@ -98,9 +86,9 @@ No **AgentLab** — meu projeto principal no momento — levo essa disciplina pa
 | Projeto | O que resolve | Engenharia | Stack |
 |---|---|---|---|
 | **[AgentLab](https://github.com/BujesL/AgentLab)** | Avalia sistematicamente agentes de IA (tool calling, reprodutibilidade, observabilidade) antes de irem para produção | Engine de avaliação com métricas/traces/quality gates, Provider Adapter multi-LLM, Spec-Driven Development/OpenSpec, CI/CD | Python · Fastify · Next.js · PostgreSQL |
-| **[Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS)** | Service desk interno: e-mail vira chamado rastreável | Spec-Driven Development, Microsoft Graph, numeração atômica, testes unit+integração | Fastify · PostgreSQL · React · N8N |
-| **[Startup Radar POA](https://github.com/BujesL/startup-radar-business-intelligence)** | Identifica setores em crescimento na Grande Porto Alegre via CNPJ | Pipeline Polars lazy, agregados pré-computados, insight de IA auditável | Next.js 15 · Supabase · Polars |
-| **[Cronicas-de-Aethelgard](https://github.com/BujesL/Cronicas-de-Aethelgard)** | TCG estilo Hearthstone (projeto pessoal) | Deck-building, keywords via event hooks, 6 facções | Flask · Python · JavaScript |
+| **[Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS)** | Service desk interno: e-mail vira chamado rastreável | Spec-Driven Development, Microsoft Graph, numeração atômica via `nextval()`, testes unit+integração (Vitest) | Fastify · PostgreSQL · React · Microsoft Graph |
+| **[Startup Radar POA](https://github.com/BujesL/startup-radar-business-intelligence)** | Identifica setores em crescimento na Grande Porto Alegre a partir do cadastro nacional de CNPJ | Pipeline Polars lazy (predicate pushdown), carga via `COPY`, agregados pré-computados, RLS desde o schema, insight de IA auditável | Next.js 15 · Supabase · Polars |
+| **[Cronicas-de-Aethelgard](https://github.com/BujesL/Cronicas-de-Aethelgard)** | Jogo de cartas 1v1 contra IA — protótipo Flask migrado para produção | Migração completa de arquitetura, Auth + RLS via Supabase, deploy contínuo na Vercel | Next.js 16 · React 19 · TypeScript · Supabase |
 | **[Sultec-Bombas](https://github.com/BujesL/Sultec-Bombas)** | Modernização de site institucional | Layout responsivo, animações, lightbox | HTML · CSS · JavaScript |
 
 ---
