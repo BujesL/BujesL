@@ -6,7 +6,7 @@
 
 # Vinícius Bujes de Lima
 
-**Automation Engineer · Full-Stack Developer · DevOps · AI**
+**AI Automation Engineer · Full-Stack Software Engineer**
 
 Canoas, RS — Brasil &nbsp;·&nbsp; ProShows &nbsp;·&nbsp; Análise e Desenvolvimento de Sistemas — UNISINOS
 
@@ -14,7 +14,7 @@ Canoas, RS — Brasil &nbsp;·&nbsp; ProShows &nbsp;·&nbsp; Análise e Desenvol
 
 ### Meu diferencial
 
-Transformo processos operacionais em sistemas confiáveis — conectando infraestrutura, automação, software, dados e IA. Parto da infraestrutura, automatizo o processo, desenvolvo o software quando necessário, estruturo os dados e aplico IA onde ela realmente agrega valor.
+Conecto infraestrutura, automação, software, dados e IA para transformar processos operacionais manuais em sistemas confiáveis — cada camada sustentando a próxima.
 
 ```
 Infraestrutura
@@ -30,9 +30,9 @@ Infraestrutura
 
 ### Sobre mim
 
-Construo automações com **N8N** para eliminar atrito operacional na ProShows e, quando a automação não basta, desenvolvo o sistema que falta — sustentado pela infraestrutura que também administro.
+Construo automações com **n8n** para eliminar atrito operacional na ProShows e, quando a automação não basta, desenvolvo o sistema que falta — sustentado pela infraestrutura que também administro.
 
-Aplico a mesma lógica no **Crônicas de Aethelgard**, meu laboratório pessoal, onde exploro arquitetura de software e IA aplicada, usando LLMs como componentes controlados do sistema — não como substitutos da lógica de negócio. No **AgentLab**, levo essa disciplina um passo além: construo a infraestrutura de engenharia para *avaliar* agentes de IA antes que eles cheguem à produção.
+No **AgentLab** — meu projeto principal no momento — levo essa disciplina para dentro da própria IA: construo a infraestrutura de engenharia para *avaliar* agentes antes que eles cheguem à produção. No **Crônicas de Aethelgard**, meu laboratório pessoal, aplico a mesma lógica em arquitetura de software, usando LLMs como componentes controlados do sistema — não como substitutos da lógica de negócio.
 
 ### Atualmente explorando
 
@@ -40,13 +40,16 @@ Aplico a mesma lógica no **Crônicas de Aethelgard**, meu laboratório pessoal,
 
 ---
 
+### 🔬 Projeto em destaque: AgentLab
+
+**Framework de avaliação de agentes de IA** — [AgentLab](https://github.com/BujesL/AgentLab): motor de avaliação em Python que mede tool calling, reprodutibilidade e observabilidade de agentes de IA, com quality gates integrados a CI/CD. Segue Spec-Driven Development/OpenSpec de ponta a ponta (`spec.md` → `plan.md` → `contracts/` → `tasks.md`) — nenhuma feature relevante entra sem spec e contrato prévios. Um Provider Adapter desacopla o motor do LLM usado, evitando lock-in de fornecedor.
+
 ### Engenharia em prática
 
-- **Framework de avaliação de agentes de IA** — [AgentLab](https://github.com/BujesL/AgentLab): motor de evaluation em Python que mede tool calling, reprodutibilidade e observabilidade de agentes de IA, com quality gates integrados a CI/CD. Segue Spec-Driven Development/OpenSpec de ponta a ponta (`spec.md` → `plan.md` → `contracts/` → `tasks.md`) — nenhuma feature relevante entra sem spec e contrato prévios. Um Provider Adapter desacopla o motor do LLM usado, evitando lock-in de fornecedor.
 - **Service Desk com Spec-Driven Development** — [Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS): 4 features especificadas (`spec.md` → `plan.md` → `contracts/` → `tasks.md`) antes do código, ingestão de e-mail via Microsoft Graph, numeração de ticket atômica (`nextval()` na mesma transação, sem race condition), testes unit + integração.
-- **Data pipeline em escala nacional** — [Startup Radar POA](https://github.com/BujesL/startup-radar-business-intelligence): filtra o dataset nacional de CNPJ (centenas de milhões de registros) com Polars em modo *lazy*, aplicando o recorte regional ainda no plano de execução, sem materializar a base inteira em memória.
+- **Data pipeline em escala nacional** — [Startup Radar POA](https://github.com/BujesL/startup-radar-business-intelligence): filtra o dataset nacional de CNPJ com Polars em modo *lazy*, aplicando o recorte regional ainda no plano de execução, sem materializar a base inteira em memória.
 - **Arquitetura de IA para produção** — no mesmo projeto, a Claude API só recebe dados já agregados pelo Postgres; nunca uma pergunta livre. O JSON usado fica salvo para auditoria. A decisão arquitetural é deliberada: a IA interpreta dados já validados; não define a verdade do sistema.
-- **Automação em produção** — workflow N8N que processa chamados recebidos por e-mail, classifica solicitações e integra Outlook, Teams, Trello e SQL, reduzindo etapas manuais do atendimento.
+- **Automação em produção** — workflow n8n que processa chamados recebidos por e-mail, classifica solicitações e integra Outlook, Teams, Trello e SQL, reduzindo etapas manuais do atendimento.
 - **Segurança desde o schema** — Row Level Security habilitado desde a criação das tabelas, escrita restrita a uma role que só o pipeline possui.
 
 ### Princípios de engenharia
@@ -76,14 +79,17 @@ Aplico a mesma lógica no **Crônicas de Aethelgard**, meu laboratório pessoal,
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
-**Infra & Automação**
+**AI & Automation**
+
+![Claude](https://img.shields.io/badge/Claude_API-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
+
+**Infra & DevOps**
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude_API-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
 
 ---
 
@@ -91,7 +97,7 @@ Aplico a mesma lógica no **Crônicas de Aethelgard**, meu laboratório pessoal,
 
 | Projeto | O que resolve | Engenharia | Stack |
 |---|---|---|---|
-| **[AgentLab](https://github.com/BujesL/AgentLab)** | Avalia sistematicamente agentes de IA (tool calling, reprodutibilidade, observabilidade) antes de irem para produção | Evaluation engine com métricas/traces/quality gates, Provider Adapter multi-LLM, Spec-Driven Development/OpenSpec, CI/CD | Python · Fastify · Next.js · PostgreSQL |
+| **[AgentLab](https://github.com/BujesL/AgentLab)** 🔬 | Avalia sistematicamente agentes de IA (tool calling, reprodutibilidade, observabilidade) antes de irem para produção | Engine de avaliação com métricas/traces/quality gates, Provider Adapter multi-LLM, Spec-Driven Development/OpenSpec, CI/CD | Python · Fastify · Next.js · PostgreSQL |
 | **[Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS)** | Service desk interno: e-mail vira chamado rastreável | Spec-Driven Development, Microsoft Graph, numeração atômica, testes unit+integração | Fastify · PostgreSQL · React · N8N |
 | **[Startup Radar POA](https://github.com/BujesL/startup-radar-business-intelligence)** | Identifica setores em crescimento na Grande Porto Alegre via CNPJ | Pipeline Polars lazy, agregados pré-computados, insight de IA auditável | Next.js 15 · Supabase · Polars |
 | **[Cronicas-de-Aethelgard](https://github.com/BujesL/Cronicas-de-Aethelgard)** | TCG estilo Hearthstone (projeto pessoal) | Deck-building, keywords via event hooks, 6 facções | Flask · Python · JavaScript |
