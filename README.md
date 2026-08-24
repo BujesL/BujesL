@@ -46,7 +46,7 @@ Aplico a mesma lógica no **Crônicas de Aethelgard**, meu laboratório pessoal,
 - **Service Desk com Spec-Driven Development** — [Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS): 4 features especificadas (`spec.md` → `plan.md` → `contracts/` → `tasks.md`) antes do código, ingestão de e-mail via Microsoft Graph, numeração de ticket atômica (`nextval()` na mesma transação, sem race condition), testes unit + integração.
 - **Data pipeline em escala nacional** — [Startup Radar POA](https://github.com/BujesL/startup-radar-business-intelligence): filtra o dataset nacional de CNPJ (centenas de milhões de registros) com Polars em modo *lazy*, aplicando o recorte regional ainda no plano de execução, sem materializar a base inteira em memória.
 - **Arquitetura de IA para produção** — no mesmo projeto, a Claude API só recebe dados já agregados pelo Postgres; nunca uma pergunta livre. O JSON usado fica salvo para auditoria. A decisão arquitetural é deliberada: a IA interpreta dados já validados; não define a verdade do sistema.
-- **Automação em produção** — workflow N8N na ProShows integrando Outlook, Trello, Teams e SQL, com filtro de domínio corporativo contra chamados falsos.
+- **Automação em produção** — workflow N8N que processa chamados recebidos por e-mail, classifica solicitações e integra Outlook, Teams, Trello e SQL, reduzindo etapas manuais do atendimento.
 - **Segurança desde o schema** — Row Level Security habilitado desde a criação das tabelas, escrita restrita a uma role que só o pipeline possui.
 
 ### Princípios de engenharia
