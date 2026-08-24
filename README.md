@@ -32,16 +32,17 @@ Infraestrutura
 
 Construo automações com **N8N** para eliminar atrito operacional na ProShows e, quando a automação não basta, desenvolvo o sistema que falta — sustentado pela infraestrutura que também administro.
 
-Aplico a mesma lógica no **Crônicas de Aethelgard**, meu laboratório pessoal, onde exploro arquitetura de software e IA aplicada, usando LLMs como componentes controlados do sistema — não como substitutos da lógica de negócio.
+Aplico a mesma lógica no **Crônicas de Aethelgard**, meu laboratório pessoal, onde exploro arquitetura de software e IA aplicada, usando LLMs como componentes controlados do sistema — não como substitutos da lógica de negócio. No **AgentLab**, levo essa disciplina um passo além: construo a infraestrutura de engenharia para *avaliar* agentes de IA antes que eles cheguem à produção.
 
 ### Atualmente explorando
 
-`AI Engineering` · `Automation Engineering` · `Software Architecture` · `Data Engineering`
+`AI Engineering` · `Agent Evaluation` · `Automation Engineering` · `Software Architecture` · `Data Engineering`
 
 ---
 
 ### Engenharia em prática
 
+- **Framework de avaliação de agentes de IA** — [AgentLab](https://github.com/BujesL/AgentLab): motor de evaluation em Python que mede tool calling, reprodutibilidade e observabilidade de agentes de IA, com quality gates integrados a CI/CD. Segue Spec-Driven Development/OpenSpec de ponta a ponta (`spec.md` → `plan.md` → `contracts/` → `tasks.md`) — nenhuma feature relevante entra sem spec e contrato prévios. Um Provider Adapter desacopla o motor do LLM usado, evitando lock-in de fornecedor.
 - **Service Desk com Spec-Driven Development** — [Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS): 4 features especificadas (`spec.md` → `plan.md` → `contracts/` → `tasks.md`) antes do código, ingestão de e-mail via Microsoft Graph, numeração de ticket atômica (`nextval()` na mesma transação, sem race condition), testes unit + integração.
 - **Data pipeline em escala nacional** — [Startup Radar POA](https://github.com/BujesL/startup-radar-business-intelligence): filtra o dataset nacional de CNPJ (centenas de milhões de registros) com Polars em modo *lazy*, aplicando o recorte regional ainda no plano de execução, sem materializar a base inteira em memória.
 - **Arquitetura de IA para produção** — no mesmo projeto, a Claude API só recebe dados já agregados pelo Postgres; nunca uma pergunta livre. O JSON usado fica salvo para auditoria. A decisão arquitetural é deliberada: a IA interpreta dados já validados; não define a verdade do sistema.
@@ -54,6 +55,7 @@ Aplico a mesma lógica no **Crônicas de Aethelgard**, meu laboratório pessoal,
 - **Segurança desde o design** — permissões, RLS e isolamento de acesso são definidos antes da aplicação existir.
 - **Automação com controle** — workflows exigem validação, idempotência e rastreabilidade.
 - **Software guiado por contratos** — features são especificadas antes da implementação e protegidas por testes.
+- **IA não vai para produção sem avaliação** — agentes são medidos por métricas objetivas e quality gates antes de qualquer deploy.
 
 ---
 
@@ -78,6 +80,7 @@ Aplico a mesma lógica no **Crônicas de Aethelgard**, meu laboratório pessoal,
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude_API-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
@@ -88,6 +91,7 @@ Aplico a mesma lógica no **Crônicas de Aethelgard**, meu laboratório pessoal,
 
 | Projeto | O que resolve | Engenharia | Stack |
 |---|---|---|---|
+| **[AgentLab](https://github.com/BujesL/AgentLab)** | Avalia sistematicamente agentes de IA (tool calling, reprodutibilidade, observabilidade) antes de irem para produção | Evaluation engine com métricas/traces/quality gates, Provider Adapter multi-LLM, Spec-Driven Development/OpenSpec, CI/CD | Python · Fastify · Next.js · PostgreSQL |
 | **[Sistema-de-Chamados-PS](https://github.com/BujesL/Sistema-de-Chamados-PS)** | Service desk interno: e-mail vira chamado rastreável | Spec-Driven Development, Microsoft Graph, numeração atômica, testes unit+integração | Fastify · PostgreSQL · React · N8N |
 | **[Startup Radar POA](https://github.com/BujesL/startup-radar-business-intelligence)** | Identifica setores em crescimento na Grande Porto Alegre via CNPJ | Pipeline Polars lazy, agregados pré-computados, insight de IA auditável | Next.js 15 · Supabase · Polars |
 | **[Cronicas-de-Aethelgard](https://github.com/BujesL/Cronicas-de-Aethelgard)** | TCG estilo Hearthstone (projeto pessoal) | Deck-building, keywords via event hooks, 6 facções | Flask · Python · JavaScript |
