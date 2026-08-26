@@ -6,7 +6,7 @@
 
 # Vinícius Bujes de Lima
 
-**AI Automation Engineer · Full-Stack Software Engineer · AI Engineering**
+**AI Automation Engineer · Software Engineer · AI Engineering · Automation · AI · Full-Stack · Data**
 
 Canoas, RS — Brasil &nbsp;·&nbsp; ProShows &nbsp;·&nbsp; Análise e Desenvolvimento de Sistemas — UNISINOS 
 
