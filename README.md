@@ -51,13 +51,29 @@ Uso um `ProviderAdapter` para desacoplar o motor de um provedor específico de L
 
 ### Projetos
 
-| Projeto                                                                                 | Problema                                        | Tecnologias / o que pratiquei                          |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------ | -------------------------------------------------------- |
-| **[AgentLab](https://github.com/BujesL/AgentLab)**                                       | Avaliação de agentes de IA                       | Python · organização de projeto · testes                 |
-| **[Sistema de Chamados](https://github.com/BujesL/Sistema-de-Chamados-PS)**              | Transformar e-mails em chamados rastreáveis      | Fastify · PostgreSQL · Microsoft Graph · React · testes   |
-| **[Startup Radar POA](https://github.com/BujesL/startup-radar-business-intelligence)**   | Encontrar padrões em dados públicos de empresas  | Polars · PostgreSQL · Next.js · Supabase · análise de dados |
-| **[Crônicas de Aethelgard](https://github.com/BujesL/Cronicas-de-Aethelgard)**           | Jogo de cartas 1v1 contra IA                     | Next.js · TypeScript · Supabase · RLS                     |
-| **[Sultec-Bombas](https://github.com/BujesL/Sultec-Bombas)**                             | Modernização de site institucional               | HTML · CSS · JavaScript · responsividade                  |
+#### Na ProShows (internos)
+
+Projetos que desenvolvo com a equipe de TI. Os repositórios são privados, então descrevo o problema e a minha participação.
+
+| Projeto | Problema | Tecnologias / minha participação |
+| --- | --- | --- |
+| **Monorepo da TI** | Projetos internos espalhados e sem padrão | Criei com a equipe a estrutura do monorepo, que já é usada por outros membros do time |
+| **ProEats** | Registro de almoço dos colaboradores | Reformulação do sistema, já em funcionamento dentro do monorepo |
+| **Agente de NF-e** | Notas de faturamento tratadas manualmente antes de chegar aos representantes | Agente de IA que lê cada NF, extrai a chave de acesso, prepara os arquivos e envia ao Mercanet. Desenvolvimento concluído, aguardando integração do lado do Mercanet |
+| **Analytics de compras de clientes** | Representantes sem visão do histórico de compras dos clientes | Site com histórico de 5 anos por cliente e sugestões de venda. Cada representante vê apenas os clientes da sua região. Em desenvolvimento (fase inicial) |
+| **Meta Premiada** | <!-- descreva o problema em uma linha --> | Implantação da aplicação na Hostinger |
+| **Automações Power Automate** | Tarefas repetitivas no financeiro e no tratamento de e-mails | Fluxo que salva anexos no OneDrive em pastas nomeadas pela data extraída do e-mail; fluxo Forms → SharePoint para registro de notas de pagamento, com validação de prazo e e-mails de retorno |
+| **Relatórios SQL (Protheus/Mercanet)** | Indicadores de pedidos e carteira sem visão consolidada | Consultas com joins entre tabelas de pedidos, cálculo de carteira e métricas de aging |
+
+#### No GitHub (públicos)
+
+| Projeto | Problema | Tecnologias / o que pratiquei |
+| --- | --- | --- |
+| **[AgentLab](https://github.com/BujesL/AgentLab)** | Avaliação de agentes de IA | Python · organização de projeto · testes |
+| **[Sistema de Chamados](https://github.com/BujesL/Sistema-de-Chamados-PS)** | Transformar e-mails em chamados rastreáveis | Fastify · PostgreSQL · Microsoft Graph · React · n8n · testes |
+| **[Startup Radar POA](https://github.com/BujesL/startup-radar-business-intelligence)** | Encontrar padrões em dados públicos de empresas | Polars · PostgreSQL · Next.js · Supabase · análise de dados |
+| **[Crônicas de Aethelgard](https://github.com/BujesL/Cronicas-de-Aethelgard)** | Jogo de cartas 1v1 contra IA | Next.js · TypeScript · Supabase · RLS |
+| **[Sultec-Bombas](https://github.com/BujesL/Sultec-Bombas)** | Modernização de site institucional | HTML · CSS · JavaScript · responsividade |
 
 ---
 
@@ -66,10 +82,9 @@ Uso um `ProviderAdapter` para desacoplar o motor de um provedor específico de L
 **Automação e infraestrutura — ProShows**
 
 * Apoio na administração de infraestrutura e ambientes Linux.
-* Desenvolvimento de automações com **n8n**.
-* Integração entre Outlook, Teams, Trello e bancos de dados.
-* Automação de processos operacionais e de atendimento.
-* Desenvolvimento de soluções internas quando uma automação simples não resolve.
+* Automações com **n8n** e **Power Automate** integrando Outlook, Teams, Trello, SharePoint e bancos de dados.
+* Desenvolvimento de sistemas internos quando uma automação simples não resolve.
+* Condução de um treinamento interno de Microsoft Copilot para colaboradores.
 
 ---
 
@@ -102,6 +117,7 @@ Uso um `ProviderAdapter` para desacoplar o motor de um provedor específico de L
 
 ![Claude](https://img.shields.io/badge/Claude_API-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
+![Power Automate](https://img.shields.io/badge/Power_Automate-0066FF?style=for-the-badge&logo=powerautomate&logoColor=white)
 
 **Infraestrutura**
 
