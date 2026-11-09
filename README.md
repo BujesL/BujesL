@@ -6,7 +6,7 @@
 
 # Vinícius Bujes de Lima
 
-**Desenvolvedor(a) Júnior · Automação · Estudante de ADS**
+**Desenvolvedor Júnior · Automação · Estudante de ADS**
 
 Canoas, RS — Brasil · ProShows · Análise e Desenvolvimento de Sistemas — UNISINOS
 
